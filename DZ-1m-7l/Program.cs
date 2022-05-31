@@ -35,9 +35,9 @@ do
     {
         text = Console.ReadLine();
 
-        if (string.IsNullOrEmpty(text))
+        if (string.IsNullOrEmpty(text) || text.Length > 28)
         {
-            Console.WriteLine("Таблица не может быть пустой. Введите текст");
+            Console.WriteLine("Таблица не может быть пустой и не может содержать больше 28ми символов. Введите текст");
         }
         else
         {
